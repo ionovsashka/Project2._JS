@@ -1,0 +1,109 @@
+//<МИКСИНЫ>===================================================================
+@mixin flexbox(){display: -webkit-box; display: -moz-box; display: -ms-flexbox;display: -webkit-flex;display:flex; font-size: 0;}
+@mixin tr($x,$y,$z){transform:translate3d($x,$y,$z); -webkit-transform:translate3d($x,$y,$z); -ms-transform:translate3d($x,$y,$z);-o-transform:translate3d($x,$y,$z)}
+//</МИКСИНЫ>==================================================================
+
+
+
+
+
+
+// Подлючение стилей
+@import "nullstyle.scss";
+// <ПОДКЛЮЧЕНИЕ ШРИФТОВ>=========================================================
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+//</ПОДКЛЮЧЕНИЕ ШРИФТОВ>=============================================================
+//<ШРИФТЫ>=======================================================================
+
+//<ШРИФТ ПО УМОЛЧАНИЮ>===========================================================
+$fontfamily:"Lato";
+//</ШРИФТ ПО УМОЛЧАНИЮ>==========================================================
+
+//</ШРИФТЫ>======================================================================
+
+//<ПЕРЕМЕННЫЕ>===================================================================
+$mw:1100;// Значение контейнера
+//</ПЕРЕМЕННЫЕ>==================================================================
+
+//<ОБОЛОЧКА>===================================================================
+.wrapper{
+}
+body{
+	background-image: radial-gradient(at center center, rgb(6, 189, 193), rgb(104, 70, 159));
+	font-family: 'Comfortaa', cursive;
+}
+//</ОБОЛОЧКА>==================================================================
+//<ОСНОВНАЯ СЕТКА>===================================================================
+.quote {
+
+	&__container {
+		max-width: 1200px;
+		margin: 0 auto;
+		min-height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	&__title {
+		font-size: 2rem;
+		color: #fff;
+		margin-bottom: 30px;
+	}
+
+	&__content {
+		background-color: #fff;
+		width: 60%;
+		margin: 0 auto;
+		min-height: 400px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 0 25px;
+		border: 10px solid #06BDC1;
+		border-radius: 15px;
+		box-shadow: 0px 2px 6px 0px rgb(0 0 0 / 90%);
+		margin-bottom: 50px;
+	}
+
+	&__text {
+		font-size: 1.7rem;
+		margin-bottom: 30px;
+	}
+
+	&__author {
+		font-size: 2rem;
+		color: black;
+		font-family: 'Dancing Script', cursive;
+		font-weight: 700;
+	}
+
+	&__button {
+		font-size: 1.3rem;
+		color: #fff;
+		background-color: #17a2b8;
+		border-radius: 10px;
+		border: 1px solid #fff;
+		padding: 15px;
+		&:hover{
+			background-color: rgba(0, 0, 0, 0.1);
+		}
+	}
+}
+
+
+//</ОСНОВНАЯ СЕТКА>===================================================================
+
+
+
+
+
+
+
+
